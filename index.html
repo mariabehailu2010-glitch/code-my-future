@@ -1,86 +1,36 @@
+
+
+    <!DOCTYPE html>
+    <html lang="en">
         <head>
             <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>future my time arrangment</title>
-            <style>
-                :root {
-                    --bg: #ffffff;
-                    --text: #111827;
-                    --accent: #2563eb;
-                    --muted: #6b7280;
-                }
-                [data-theme="dark"] {
-                    --bg: #0b1220;
-                    --text: #e6eef8;
-                    --accent: #60a5fa;
-                    --muted: #9ca3af;
-                }
-                html,body{
-                    height:100%;
-                    margin:0;
-                }
-                body{
-                    background:var(--bg);
-                    color:var(--text);
-                    font-family:Segoe UI, Roboto, Arial, sans-serif;
-                    line-height:1.45;
-                    padding:2rem;
-                }
-                h1{color:var(--accent);margin-top:0}
-                p{color:var(--muted)}
-                .theme-toggle{
-                    position:fixed;
-                    right:1rem;
-                    top:1rem;
-                    background:transparent;
-                    border:1px solid var(--muted);
-                    color:var(--text);
-                    padding:0.4rem 0.6rem;
-                    border-radius:6px;
-                    cursor:pointer;
-                }
-            </style>
+            <title> STUDENT-Corner</title>
         </head>
         <body>
-           <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">Toggle theme</button>
-           <h1>My main title</h1>
-           <h2>My top level heading</h2>
-           <h3>My subheading</h3>
-           <h4>My sub-subheading</h4>
-           <h5>My small subheading</h5>
-           <h6>My extra small heading</h6>
-
-       <p> This is a single paragraph.</p>
-
-       <script>
-           (function(){
-               const root = document.documentElement;
-               const toggle = document.getElementById('themeToggle');
-               const saved = localStorage.getItem('site-theme');
-               if(saved === 'dark') root.setAttribute('data-theme','dark');
-               function updateLabel(){
-                   const isDark = root.getAttribute('data-theme') === 'dark';
-                   toggle.textContent = isDark ? 'Light theme' : 'Dark theme';
-               }
-               toggle.addEventListener('click', ()=>{
-                   const isDark = root.getAttribute('data-theme') === 'dark';
-                   if(isDark){
-                       root.removeAttribute('data-theme');
-                       localStorage.setItem('site-theme','light');
-                   } else {
-                       root.setAttribute('data-theme','dark');
-                       localStorage.setItem('site-theme','dark');
-                   }
-                   updateLabel();
-               });
-               updateLabel();
-           })();
-       </script>
-
-        </body>
        
+           <h1>Introduction to be a Success student</h1>
+           
+           <img src="C:\Users\maria\Downloads\img.jpg\photo_2025-12-15_20-50-00.jpg" alt="my self" width="1200" height="400">
+           <p> This is tips to success of students to study effeciently and effectively.</p>
+
+
        
+       <p>student success depnds on several key factors including;</p>
+        <ul>
+           <li>planning</li>
+           <li>focus</li>
+           <li>reflection</li>
+       </ul>
        
+      <p>The steps to follow to became a great student</p> 
+      <ol>
+          <li>Set clear goals</li>
+          <li>Manage your time effectively</li>
+          <li>Stay organized</li>
+          <li>Seek help when needed</li>
+      </ol>
+
+
        
         </body>
     </html>
